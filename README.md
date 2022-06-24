@@ -1,0 +1,2 @@
+# prisma-binaries
+yes
