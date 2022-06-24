@@ -1,4 +1,4 @@
-FROM rust:1.58.1-alpine3.16 as prisma
+FROM rust:1.59.0-alpine3.14 as prisma
 ENV RUSTFLAGS="-C target-feature=-crt-static"
 RUN apk --no-cache add openssl direnv git musl-dev openssl-dev build-base perl protoc
 RUN git clone --depth=1 --branch=3.15.x https://github.com/prisma/prisma-engines.git /prisma
