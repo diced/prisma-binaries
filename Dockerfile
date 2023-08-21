@@ -13,4 +13,4 @@ RUN cargo build --release
 RUN apk del .build-deps
 
 FROM alpine:3.16
-COPY --from=prisma /prisma/target/release/query-engine /prisma/target/release/migration-engine /prisma/target/release/introspection-engine /prisma/target/release/prisma-fmt /prisma-engines/
+COPY --from=prisma /prisma/target/release/query-engine /prisma/target/release/schema-engine /prisma-engines/
