@@ -14,7 +14,7 @@ on:
 
 jobs:
   build-amd64:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v2
@@ -31,7 +31,7 @@ jobs:
           build-args: |
             PRISMA_VERSION=${{ github.event.inputs.version }}
   build-arm64:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v2
