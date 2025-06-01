@@ -1,5 +1,8 @@
 # Prisma Binaries
 
+> [!CAUTION]
+> This is now obsolete, using Prisma in an Alpine docker image will work out of the box.
+
 Prisma Binaries for arm64 and amd64 architectures, that use Alpine Docker images.
 
 ## Why?
